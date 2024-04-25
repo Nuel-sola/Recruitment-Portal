@@ -23,6 +23,12 @@ const Sidebar = (props) => {
                 <li  className={title === "Job History" ? "nav-item active" : "nav-item"} onClick={() => navigate("/job-history")}>
                     <span  className="material-symbols-rounded mr-2">history</span>Job History
                 </li>
+                <li  className={title === "Change Password" ? "nav-item active" : "nav-item"} onClick={() => navigate("/change-password")}>
+                    <span  className="material-symbols-rounded mr-2">password</span>Change Password
+                </li>
+                <li  className={title === "Job History" ? "nav-item active" : "nav-item"} onClick={() => navigate("/job-history")}>
+                    <span  className="material-symbols-rounded mr-2">history</span>Job History
+                </li>
                 
             </ul>
         </div>

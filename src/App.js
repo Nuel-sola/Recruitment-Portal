@@ -11,6 +11,8 @@ import JobCandidate from './pages/Admin/JobCandidate';
 import EditJob from './pages/Admin/EditJob';
 import CandidateResume from './pages/Admin/CandidateResume';
 import Dashboard from './pages/Admin/Dashboard';
+import ResetPassword from './pages/Authentication/ResetPassword';
+import ChangePassword from './pages/Admin/ChangePassword';
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
             <Route path="/candidates/:title" element={<JobCandidate />}/>
             <Route path="/candidates/:title/:id/resume" element={<CandidateResume />}/>
             <Route path="/edit-job/:id" element={<EditJob />}/>
+            <Route path="/reset-password" element={<ResetPassword/>}/>
+            <Route path="/change-password" element={<ChangePassword/>}/>
           </Routes>
         </BrowserRouter>
       </div>

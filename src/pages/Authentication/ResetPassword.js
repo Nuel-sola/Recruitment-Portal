@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import { setUser } from "../../store/user";
 import { toast, ToastContainer } from 'react-toastify';
 
-const Login = () => {
+const ResetPassword = () => {
   const navigate = useNavigate()
   const dispatch = useDispatch()
   const [formData, setFormData] = useState({
@@ -87,7 +87,7 @@ const Login = () => {
           <p  className="mt-10 text-center text-sm text-gray-500">
             Don't have an account?
             <a href="#" onClick={() => navigate("/create-user")} className="font-semibold leading-6 text-blue-600 hover:text-blue-500 ml-2">Create Account</a>
-            <p>forgot password? <a className="font-semibold leading-6 text-blue-600 hover:text-blue-500 ml-2" href="#" onClick={() => navigate("/reset-password")} >Click here</a></p>
+            <p>forgot password? <a className="font-semibold leading-6 text-blue-600 hover:text-blue-500 ml-2">Click here</a></p>
           </p>
         </div>
         <ToastContainer />
@@ -95,4 +95,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default ResetPassword

@@ -131,7 +131,8 @@ const makePatchRequest = (request) =>  {
 const makePutRequest = (request) =>  {
 
     const request_urls =  {
-        "editJob": "/document/updateOne/jobs/"+ request.id
+        "editJob": "/document/updateOne/jobs/"+ request.id,
+        "editpassword": "/document/updateOne/users/"+ request.id
     }
 
     if (request.params !== undefined) {
