@@ -6,7 +6,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setUser } from "../../store/user";
 
-
+// connect the UpdatePassword to the PUT API, thats all you need to now.
 
 const ChangePassword = () => {
     const [isLoading, setIsLoading] = useState(false)
@@ -37,7 +37,6 @@ const ChangePassword = () => {
             toast.error('password and confirm password did not match');
             return;
         }
-
 
         var request = {
             what: "editpassword",
